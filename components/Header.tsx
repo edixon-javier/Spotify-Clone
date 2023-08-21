@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         className
       )}
     >
-      <div className="w-full mb-4 items-center justify-between">
+      <div className="flex w-full mb-4 items-center justify-between">
         <div className="hidden md:flex gap-x-2 items-center">
           <button
             onClick={() => router.back()}
@@ -48,11 +48,23 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         <div className="flex justify-between items-center gap-x-4">
           <>
             <div>
-              <Button />
+              <Button 
+              onClick={()=>{}}
+              className="bg-transparent text-neutral-300 font-medium" >
+                Sing up
+              </Button>
+            </div>
+            <div>
+              <Button 
+              onClick={()=>{}}
+              className="bg-white px-6 py-2">
+                Log in
+              </Button>
             </div>
           </>
         </div>
       </div>
+      {children}
     </div>
   );
 };

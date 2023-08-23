@@ -23,3 +23,5 @@ const SupabaseProvider: React.FC<SupebaseProviderProps> = ({
         </SessionContextProvider>
     )
 }
+
+export default SupabaseProvider;

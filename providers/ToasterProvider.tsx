@@ -15,3 +15,6 @@ const ToasterProvider = () => {
   );
 };
 export default ToasterProvider;
+
+
+//! npm install react-hot-toast
